@@ -1,32 +1,138 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
+    box-sizing: border-box;
 }
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px; /* Space for fixed header */
+}
+
+/* Header */
 header {
-    background-color: #2E8B57;
+    background-color: #314528; /* Green */
     color: white;
-    padding: 1rem;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
 }
-nav ul {
+
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+header nav ul {
     list-style: none;
     padding: 0;
+    margin-top: 10px;
 }
-nav ul li {
+
+header nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-right: 20px;
 }
-nav ul li a {
+
+header nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
-section {
+
+header nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Logo Styles */
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Main Section */
+main {
+    margin-top: 120px;
     padding: 20px;
 }
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#about h2 {
+    color: #314528;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+#services {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#services h2 {
+    color: #314528;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#services ul {
+    list-style-type: none;
+}
+
+#services ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #314528;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#contact a {
+    color: #314528;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #2f3f2d;
+}
+
+/* Footer */
 footer {
-    background-color: #2E8B57;
+    background-color: #314528;
     color: white;
+    text-align: center;
     padding: 10px;
     position: fixed;
     width: 100%;
